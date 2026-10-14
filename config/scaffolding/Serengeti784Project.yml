@@ -4,3 +4,16 @@ info:
 packages:
 - name: Serengeti784Project
   gitBranch: master
+services:
+- serviceName: project.serengeti784.integrations:gcd
+  packages:
+  - name: Serengeti784Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1073
+- serviceName: project.serengeti784.streaming.connections:EmbeddedMessaging
+  packages:
+  - name: Serengeti784Project
+    version: "1.0"
